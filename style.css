@@ -1,0 +1,70 @@
+/* TODO créer des var pour les durées des anim et les utiliser pour le setimeout*/
+/*essayer d'utilser clac pour calc la hateur de qd l'image disparait*/
+body {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(116, 139, 0);
+    align-items: center;
+    justify-content: space-between;
+    width: 100dvw;
+    border-radius: 5%;
+    z-index: 110;
+}
+
+.wrapper {
+    position: relative;
+    width: 80dvw ;
+    height: 70dvh;
+    border : solid 15px rgb(235, 235, 12);
+    border-radius: 5px;
+    background-color: blue;
+    z-index: 100;
+}
+
+.score {
+    position: absolute;
+    right: 5px;
+    width: 5rem;
+    height: 2rem;
+    border : solid 15px rgb(163, 163, 57);
+    border-radius: 5%;
+}
+
+.letters {
+    position: relative;
+    width: 10dvw ;
+    height: 10dvh;
+    border : solid 15px rgb(158, 158, 41) ;
+    border-radius: 5%;
+    margin: 1rem;
+    cursor: crosshair;
+    font-size: 5rem;
+}
+
+img {
+    position: absolute;
+    top: -1dvw;
+    width: 100px;
+    height: auto;
+    opacity: 1;
+    z-index: 1;
+}
+
+img:hover{
+    width: 200px;
+    transition: width 1s;
+}
+
+.fall {
+    z-index: 123;
+    top : 65dvh ;
+    /* top: calc(70dvh-100px); */
+    transition: all 14s; 
+    /* trouver lapropriété pour accéler la transiton sur la fin/*/
+}
+
+.disappear {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
